@@ -5,8 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solicitar Ayuda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="https://i.pinimg.com/originals/3f/53/20/3f5320bda51f29d0e6ef7a61d030c234.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            
+          </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Quienes Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Actividades
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Talleres</a></li>
+              <li><a class="dropdown-item" href="#">Centro Cultural (CULTU)</a></li>
+              <li><a class="dropdown-item" href="#">Centro Educativo Terapeutico</a></li>
+              <li><a class="dropdown-item" href="#">Sede Universitaria</a></li>
+            </ul>
+          </li>
+        </ul>
+        <button class="btn btn-outline-success" type="submit">Donar</button>
+
+      </div>
+    </div>
+  </nav>
+
 <body>
+    <h1>Solicitar ayuda</h1>
+
+ <form action="">
+
+    <p>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" placeholder="Nombre" name="nombre" required> 
+    </p>
+
+    <p>
+        <label for="apellido">Apellido</label>
+        <input id="apellido" type="text" placeholder="Apellido" name="apellido" required> 
+    </p>
     
+    <p>
+        <label for="telefono">Telefono de Contacto</label>
+        <input id="telefono" type="text" placeholder="+54 123456789" name="telefono" required>
+    </p>
+
+    <p>
+        <label for="email">Corréo Electronico</label>
+        <input id="email" type="email" placeholder="TuCorreo@Ejemplo.com" name="email" required>
+    </p>
+
+    <p>
+        <select name="provincia" id="provincia">
+            <option value="" selected>Provincia donde reside</option>
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="Catamarca">Catamarca</option>
+            <option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+            <option value="Chaco">Chaco</option>
+            <option value="Chubut">Chubut</option>
+            <option value="Córdoba">Córdoba</option>
+            <option value="Corrientes">Corrientes</option>
+            <option value="Entre Ríos">Entre Ríos</option>
+            <option value="Formosa">Formosa</option>
+            <option value="Jujuy">Jujuy</option>
+            <option value="La Pampa">La Pampa</option>
+            <option value="La Rioja">La Rioja</option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="Misiones">Misiones</option>
+            <option value="Neuquén">Neuquén</option>
+            <option value="Río Negro">Río Negro</option>
+            <option value="Salta">Salta</option>
+            <option value="San Juan">San Juan</option>
+            <option value="San Luis">San Luis </option>
+            <option value="Santa Cruz">Santa Cruz</option>
+            <option value="Santa Fe">Santa Fe</option>
+            <option value="Santiago del Estero">Santiago del Estero</option>
+            <option value="Tierro del Fuego, Antárdita e Islas del Atlántico Sur">Tierro del Fuego, Antárdita e Islas del Atlántico Sur</option>
+            <option value="Tucumán">Tucumán</option>
+        </select>
+    </p>
+
+    <p>
+        <label for="Ciudad">Ciudad</label>
+        <input id="Ciudad" type="text" placeholder="Ciudad" name="Ciudad" required> 
+
+    </p>
+
+    <p>
+        <label for="message">Solicitud Ayuda</label><br>
+        <textarea id="message" cols="80" rows="8" required
+             placeholder="Describa su caso."></textarea>
+
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+    </p>
+
+    
+
+   
+
+ </form>
 </body>
 </html>

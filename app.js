@@ -1,8 +1,8 @@
 console.log("funciona")
 
 
-let formulario = document.querySelector(#formulario)
-formulario.addEventListener("submit",(e)=>) {
+let formulario = document.querySelector("#formulario")
+formulario.addEventListener("submit",(e)=> {
     e.preventDefault()
 
     let nombre = document.querySelector("#nombre").value
@@ -13,11 +13,11 @@ formulario.addEventListener("submit",(e)=>) {
 
     enviarDatos(datos)
 
-}
+})
 
 
 const enviarDatos = async (datos) => {
-    let respuesta = await fecth ("fundacionBR.com/cargardatos",{
+    let respuesta = await fetch ("fundacionBR.com/cargardatos",{
         headers: {
             'Content-Type': 'application/json'
         },
